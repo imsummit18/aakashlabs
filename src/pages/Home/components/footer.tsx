@@ -2,30 +2,67 @@ import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa6";
 import FooterText from "../../../components/FooterText";
 
-const footerData = [
+const footerData1 = [
   {
     id: 1,
-    title: "Link1",
+    title: "Home",
     path: "/",
   },
   {
     id: 2,
-    title: "Link2",
+    title: "About",
     path: "/",
   },
   {
     id: 3,
-    title: "Link3",
+    title: "News",
     path: "/",
   },
   {
     id: 4,
-    title: "Link4",
+    title: "Careers",
     path: "/",
   },
   {
     id: 5,
-    title: "Link5",
+    title: "Blogs",
+    path: "/",
+  },
+  {
+    id: 6,
+    title: "Contact",
+    path: "/",
+  },
+];
+const footerData2 = [
+  {
+    id: 1,
+    title: "Link ",
+    path: "/",
+  },
+  {
+    id: 2,
+    title: "Link",
+    path: "/",
+  },
+  {
+    id: 3,
+    title: "Link",
+    path: "/",
+  },
+  {
+    id: 4,
+    title: "Link",
+    path: "/",
+  },
+  {
+    id: 5,
+    title: "Link",
+    path: "/",
+  },
+  {
+    id: 6,
+    title: "Link",
     path: "/",
   },
 ];
@@ -51,9 +88,9 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex space-x-20 w-[50%]">
-            <FooterText data={footerData} />
-            <FooterText data={footerData} />
-            <FooterText data={footerData} />
+            <FooterText data={footerData1} />
+            <FooterText data={footerData2} />
+            <FooterText data={footerData2} />
           </div>
         </div>
       </div>

@@ -1,57 +1,112 @@
-import React from "react";
+// const servicesData = [
+//   {
+//     id: 1,
+//     title: "Web Development",
+//     description:
+//       "We provide high quality web development services using the latest technologies.",
+//   },
+//   {
+//     id: 2,
+//     title: "App Development",
+//     description:
+//       "Our team specializes in developing innovative and user-friendly mobile applications.",
+//   },
+//   {
+//     id: 3,
+//     title: "Digital Marketing",
+//     description:
+//       "We offer comprehensive digital marketing strategies to help your business grow online.",
+//   },
+//   {
+//     id: 4,
+//     title: "Graphic Designing",
+//     description:
+//       "Our graphic designers create visually stunning graphics to represent your brand.",
+//   },
+
+//   {
+//     id: 5,
+//     title: "UI/UX Design",
+//     description:
+//       "Our UI/UX designers create visually stunning graphics to represent your brand.",
+//   },
+//   {
+//     id: 6,
+//     title: "Socail Marketing",
+//     description:
+//       "Our graphic designers create visually stunning graphics to represent your brand.",
+//   },
+// ];
+import {
+  FaCode,
+  FaMobileAlt,
+  FaChartLine,
+  FaPaintBrush,
+  FaObjectGroup,
+  FaShareAlt,
+} from "react-icons/fa";
 
 const servicesData = [
   {
     id: 1,
     title: "Web Development",
-    image:
-      "https://thumbs.dreamstime.com/b/web-development-coding-programming-internet-technology-business-concept-web-development-coding-programming-internet-technology-121903546.jpg",
+    icon: <FaCode size={24} />,
     description:
       "We provide high quality web development services using the latest technologies.",
   },
   {
     id: 2,
     title: "App Development",
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPVTGaNHcdubtsjsoPmqBFUYgAA_qpljMtpNzOj4siMw&s",
+    icon: <FaMobileAlt size={24} />,
     description:
       "Our team specializes in developing innovative and user-friendly mobile applications.",
   },
   {
     id: 3,
     title: "Digital Marketing",
-    image:
-      "https://thumbs.dreamstime.com/b/digital-marketing-business-concept-business-concept-businessman-click-digital-marketing-button-virtual-screen-text-typography-125648024.jpg",
+    icon: <FaChartLine size={24} />,
     description:
       "We offer comprehensive digital marketing strategies to help your business grow online.",
   },
   {
     id: 4,
     title: "Graphic Designing",
-    image:
-      "https://media.licdn.com/dms/image/D4D12AQHYC_ZczxV2zw/article-cover_image-shrink_720_1280/0/1695524296879?e=2147483647&v=beta&t=VJkWc3l89UdKGn2pEkDo4IWINkztx2V3u0tdzPL8ILA",
+    icon: <FaPaintBrush size={24} />,
+    description:
+      "Our graphic designers create visually stunning graphics to represent your brand.",
+  },
+  {
+    id: 5,
+    title: "UI/UX Design",
+    icon: <FaObjectGroup size={24} />,
+    description:
+      "Our UI/UX designers create visually stunning graphics to represent your brand.",
+  },
+  {
+    id: 6,
+    title: "Social Marketing",
+    icon: <FaShareAlt size={24} />,
     description:
       "Our graphic designers create visually stunning graphics to represent your brand.",
   },
 ];
+
 const Service = () => {
   return (
-    <div id="#services" className="p-20 bg-[#eeeeee]">
-      <h1 className="text-[48px] font-bold text-center text-primary-700">
-        Our Services
+    <div id="#services" className="p-20 bg-[#DCDCDC]">
+      <h1 className="text-[48px] font-bold text-center  ">
+        Our <span className="text-primary-700">Services</span>
       </h1>
 
-      <div className="flex  space-x-14 mt-14 rounded">
+      <div className="flex  flex-wrap  items-center justify-center mt-14 rounded-xl">
         {servicesData.map((item) => (
-          <div className="w-1/4  cursor-pointer h-fit hover:scale-110 transition duration-900 ease-in-out  rounded bg-[white] shadow-shadow">
-            <img
-              className="w-full h-[200px] rounded  rounded-b-none"
-              src={item.image}
-              alt={item.title}
-            />
-            <div className="mt-2 p-4 ">
+          <div className="w-1/4  p-4 py-8 mr-14 mb-12 cursor-pointer h-fit hover:scale-110 transition duration-900 ease-in-out  rounded-xl bg-[white] shadow-shadow hover:bg-primary-100">
+            <div className="bg-primary-500 w-fit mb-4  text-[white] p-3 rounded-full m-auto">
+              {item.icon}
+            </div>
+            <div className="  text-center">
               <p className="text-xl mb-2 font-semibold">{item.title}</p>
-              <p className="text-[#696969]">{item.description}</p>
+              <p className="text-[#696969] text-lg">{item.description}</p>
             </div>
           </div>
         ))}
