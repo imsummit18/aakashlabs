@@ -1,42 +1,4 @@
-// const servicesData = [
-//   {
-//     id: 1,
-//     title: "Web Development",
-//     description:
-//       "We provide high quality web development services using the latest technologies.",
-//   },
-//   {
-//     id: 2,
-//     title: "App Development",
-//     description:
-//       "Our team specializes in developing innovative and user-friendly mobile applications.",
-//   },
-//   {
-//     id: 3,
-//     title: "Digital Marketing",
-//     description:
-//       "We offer comprehensive digital marketing strategies to help your business grow online.",
-//   },
-//   {
-//     id: 4,
-//     title: "Graphic Designing",
-//     description:
-//       "Our graphic designers create visually stunning graphics to represent your brand.",
-//   },
 
-//   {
-//     id: 5,
-//     title: "UI/UX Design",
-//     description:
-//       "Our UI/UX designers create visually stunning graphics to represent your brand.",
-//   },
-//   {
-//     id: 6,
-//     title: "Socail Marketing",
-//     description:
-//       "Our graphic designers create visually stunning graphics to represent your brand.",
-//   },
-// ];
 import {
   FaCode,
   FaMobileAlt,

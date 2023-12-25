@@ -1,4 +1,3 @@
-import AboutHome from "../Home/components/about";
 import Footer from "../Home/components/footer";
 import Navbar from "../Home/components/navbar";
 import Main from "./components/main";

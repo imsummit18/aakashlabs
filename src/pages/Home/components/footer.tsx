@@ -1,62 +1,8 @@
-import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa6";
 import FooterText from "../../../components/FooterText";
+import { footerData1, footerData2 } from "../../../data";
 
-const footerData1 = [
-  {
-    id: 1,
-    title: "Home",
-    path: "/",
-  },
-  {
-    id: 2,
-    title: "About",
-    path: "/about",
-  },
-  {
-    id: 3,
-    title: "News",
-    path: "/news",
-  },
-  
-  {
-    id: 4,
-    title: "Contact",
-    path: "/contact",
-  },
-];
-const footerData2 = [
-  {
-    id: 1,
-    title: "Link ",
-    path: "/",
-  },
-  {
-    id: 2,
-    title: "Link",
-    path: "/",
-  },
-  {
-    id: 3,
-    title: "Link",
-    path: "/",
-  },
-  {
-    id: 4,
-    title: "Link",
-    path: "/",
-  },
-  {
-    id: 5,
-    title: "Link",
-    path: "/",
-  },
-  {
-    id: 6,
-    title: "Link",
-    path: "/",
-  },
-];
+
 
 const Footer = () => {
   return (
