@@ -1,36 +1,32 @@
 import { useLocation } from "react-router-dom";
 import Navbar from "../../Home/components/navbar";
+import Footer from "../../Home/components/footer";
 
 const SingleNews = () => {
   const location = useLocation();
   const { title, description, content, source, publishAt, url, image } =
     location.state;
-  console.log("location", location.state);
+
   return (
-    <div>
+    <div className="bg-gray-100 min-h-screen">
       <Navbar />
-      <div className="mt-[12vh] p-20 w-full max-w-[1440px] m-auto  pt-10 ">
-        <p className="text-center font-bold text-4xl leading-[2]">{title}</p>
-        <img className="my-8  w-screen h-[500px]" src={image} alt="" />
-        <p className="text-base my-2 font-medium">{description}</p>
-        <p className="text-base my-2 font-medium">{content}</p>
-        <a
-          href={url}
-          className="text-base my-2 text-primary-500 cursor-pointer"
-        >
+      <div className="mt-24 p-10 w-full max-w-5xl mx-auto bg-white rounded shadow-lg">
+        <h1 className="text-center font-bold text-4xl mb-8">{title}</h1>
+        <img className="w-full object-cover mb-8 rounded" src={image} alt="" />
+        <p className="text-lg mb-4">{description}</p>
+        <p className="text-lg mb-4">{content}</p>
+        <a href={url} className="text-primary-500 underline mb-4 block">
           {url}
         </a>
-        <p className=" text-base my-2 ">{source?.name}</p>
-        <a
-          href={source.url}
-          className="text-base my-2 text-primary-500 cursor-pointer"
-        >
+        <p className="mb-4 text-lg">{source?.name}</p>
+        <a href={source.url} className="text-primary-500 underline mb-4 block">
           {source.url}
         </a>
-        <p className="font-bold text-base italic mt-2">
-          {new Date(publishAt).toLocaleDateString()}
+        <p className="font-bold text-lg italic mt-2">
+          Published At: {new Date(publishAt).toLocaleDateString()}
         </p>
       </div>
+      <Footer />
     </div>
   );
 };

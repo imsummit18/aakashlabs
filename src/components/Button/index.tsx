@@ -4,12 +4,14 @@ interface IProps {
   variant?: string;
   className?: string;
   text?: string;
+  type?: any;
 }
 
-const Button: React.FC<IProps> = ({ variant, text, className }) => {
+const Button: React.FC<IProps> = ({ variant, text, className, type }) => {
   return (
     <>
       <button
+        type={type}
         className={`${
           variant == "primary"
             ? "bg-primary-500 text-[white] "

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 
 const slideData = [
@@ -44,6 +44,12 @@ const Slider = () => {
     const newIndex = slideIndex <= 0 ? slideData.length - 1 : slideIndex - 1;
     setSlideIndex(newIndex);
   };
+  useEffect(() => {
+    const interval = setInterval(nextSlide, 3000);
+    return () => {
+      clearInterval(interval);
+    };
+  }, [slideIndex]);
   return (
     <div className="  mt-[12vh]">
       <div className="  h-[88vh] w-full  overflow-hidden relative">

@@ -106,7 +106,7 @@ const Service = () => {
             </div>
             <div className="  text-center">
               <p className="text-xl mb-2 font-semibold">{item.title}</p>
-              <p className="text-[#696969] text-lg">{item.description}</p>
+              <p className="text-[#696969] text-base">{item.description}</p>
             </div>
           </div>
         ))}

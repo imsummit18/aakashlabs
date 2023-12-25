@@ -75,9 +75,7 @@ const Footer = () => {
           <div className="flex   w-[30%] flex-col space-y-2">
             <h1 className="text-4xl">Aakash Labs</h1>
             <p className="text-sm pt-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
-              deserunt nihil commodi asperiores necessitatibus recusandae ex
-              odit rem maxime explicabo aperiam.
+            Allow us to be your trusted guide as we jointly explore the unlimited potential of tomorrow 's inventions.
             </p>
             <p className="text-lg pt-4">info@aakashlabs.com</p>
             <p>01-4530196</p>
