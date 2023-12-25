@@ -5,12 +5,20 @@ interface IProps {
   className?: string;
   text?: string;
   type?: any;
+  onClick: () => void;
 }
 
-const Button: React.FC<IProps> = ({ variant, text, className, type }) => {
+const Button: React.FC<IProps> = ({
+  variant,
+  onClick,
+  text,
+  className,
+  type,
+}) => {
   return (
     <>
       <button
+        onClick={onClick}
         type={type}
         className={`${
           variant == "primary"

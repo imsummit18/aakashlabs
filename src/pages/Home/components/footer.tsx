@@ -11,27 +11,18 @@ const footerData1 = [
   {
     id: 2,
     title: "About",
-    path: "/",
+    path: "/about",
   },
   {
     id: 3,
     title: "News",
-    path: "/",
+    path: "/news",
   },
+  
   {
     id: 4,
-    title: "Careers",
-    path: "/",
-  },
-  {
-    id: 5,
-    title: "Blogs",
-    path: "/",
-  },
-  {
-    id: 6,
     title: "Contact",
-    path: "/",
+    path: "/contact",
   },
 ];
 const footerData2 = [

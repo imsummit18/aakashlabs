@@ -93,7 +93,7 @@ const servicesData = [
 
 const Service = () => {
   return (
-    <div id="#services" className="p-20 bg-[#DCDCDC]">
+    <div className="p-20 bg-[#DCDCDC]">
       <h1 className="text-[48px] font-bold text-center  ">
         Our <span className="text-primary-700">Services</span>
       </h1>

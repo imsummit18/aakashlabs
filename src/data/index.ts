@@ -11,16 +11,11 @@ export const navData = [
   },
   {
     id: 3,
-    title: "Careers",
-    path: "/careers",
+    title: "About",
+    path: "/about",
   },
   {
     id: 4,
-    title: "Blogs",
-    path: "/blogs",
-  },
-  {
-    id: 5,
     title: "Contact us",
     path: "/contact",
   },

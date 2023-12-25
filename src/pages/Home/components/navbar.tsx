@@ -2,9 +2,6 @@ import { NavLink } from "react-router-dom";
 import { navData } from "../../../data";
 
 const Navbar = () => {
-  //   const scrollToTop = () => {
-  //     scroll.scrollToTop();
-  //   };
   return (
     <>
       <div className="fixed w-full z-[10] top-0  ">

@@ -3,6 +3,7 @@ import TextInput from "../../../components/TextInput";
 import * as Yup from "yup";
 import Button from "../../../components/Button";
 import { BgImage, Contact } from "../../../assets/images";
+import ToastAlert from "../../../components/Toast";
 
 const FORM_VALIDATION = Yup.object().shape({
   name: Yup.string().required("Full Name is required"),
@@ -18,10 +19,15 @@ const ContactForm = () => {
   ) => {
     console.log("The submitted values are", values);
     resetForm();
+    try {
+      ToastAlert("success", "Form Successfully submitted");
+    } catch (err) {
+      ToastAlert("error", "Error while submitting form");
+    }
   };
 
   return (
-    <div className="mt-[12vh]  ">
+    <div className="mt-[12vh]">
       <div
         style={{
           backgroundImage: `url(${BgImage})`,
@@ -81,6 +87,7 @@ const ContactForm = () => {
                 />
                 <div className="mt-5">
                   <Button
+                    onClick={() => {}}
                     type="submit"
                     className=""
                     variant="primary"

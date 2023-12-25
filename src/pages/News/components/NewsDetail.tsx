@@ -164,7 +164,7 @@ const NewsDetail = () => {
   }, []);
 
   return (
-    <div className="w-full max-w-5xl mx-auto mt-12 bg-gray-100">
+    <div className="w-full max-w-5xl mx-auto mt-20 bg-gray-100">
       <div className="p-10">
         <h1 className="text-3xl text-center font-bold mb-8">
           Real-world Success Stories Unveiling stories using the impact of our
@@ -174,7 +174,7 @@ const NewsDetail = () => {
         {isLoading ? (
           <p className="mt-3 text-center text-3xl">Loading...</p>
         ) : (
-          <div >
+          <div>
             {data.map((item: any, index: any) => (
               <div
                 key={index}
@@ -206,7 +206,7 @@ const NewsDetail = () => {
                     }
                     className="text-primary-500 cursor-pointer hover:text-blue-700"
                   >
-                    Learn More ...
+                    Read More ...
                   </p>
                 </div>
               </div>
