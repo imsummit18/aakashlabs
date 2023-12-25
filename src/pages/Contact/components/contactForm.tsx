@@ -36,7 +36,7 @@ const ContactForm = () => {
         </div>
       </div>
       <div className="my-20 flex items-center justify-center w-full max-w-[1440px] m-auto  px-10">
-        <div className="w-[60%]  ">
+        <div className="w-[60%] ml-10  ">
           <Formik
             initialValues={{
               name: "",
@@ -47,7 +47,7 @@ const ContactForm = () => {
             validationSchema={FORM_VALIDATION}
             onSubmit={handleSubmit}
           >
-            {({ values }) => (
+            {() => (
               <Form>
                 <h1 className="text-[48px] mb-8">
                   Leave Us A{" "}
@@ -91,7 +91,7 @@ const ContactForm = () => {
             )}
           </Formik>
         </div>
-        <div className="w-1/2 h-[350px]  rounded-lg">
+        <div className="w-1/2 h-[350px]  rounded-lg mr-10 mt-10">
           <img src={Contact} alt="" className="w-full rounded-lg h-full" />
         </div>
       </div>
