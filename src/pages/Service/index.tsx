@@ -1,4 +1,3 @@
-
 import {
   FaCode,
   FaMobileAlt,
@@ -56,22 +55,24 @@ const servicesData = [
 const Service = () => {
   return (
     <div className="p-20 bg-[#DCDCDC]">
-      <h1 className="text-[48px] font-bold text-center  ">
-        Our <span className="text-primary-700">Services</span>
-      </h1>
+      <div className="w-full max-w-[1440px] m-auto">
+        <h1 className="text-[48px] font-bold text-center  ">
+          Our <span className="text-primary-700">Services</span>
+        </h1>
 
-      <div className="flex  flex-wrap  items-center justify-center mt-14 rounded-xl">
-        {servicesData.map((item) => (
-          <div className="w-1/4  p-4 py-8 mr-14 mb-12 cursor-pointer h-fit hover:scale-110 transition duration-900 ease-in-out  rounded-xl bg-[white] shadow-shadow hover:bg-primary-100">
-            <div className="bg-primary-500 w-fit mb-4  text-[white] p-3 rounded-full m-auto">
-              {item.icon}
+        <div className="ml-10 flex  flex-wrap  items-center justify-center mt-14 rounded-xl">
+          {servicesData.map((item) => (
+            <div className="w-1/4  p-4 py-8 mr-14 mb-12 cursor-pointer h-fit hover:scale-110 transition duration-900 ease-in-out  rounded-xl bg-[white] shadow-shadow hover:bg-primary-100">
+              <div className="bg-primary-500 w-fit mb-4  text-[white] p-3 rounded-full m-auto">
+                {item.icon}
+              </div>
+              <div className="  text-center">
+                <p className="text-xl mb-2 font-semibold">{item.title}</p>
+                <p className="text-[#696969] text-base">{item.description}</p>
+              </div>
             </div>
-            <div className="  text-center">
-              <p className="text-xl mb-2 font-semibold">{item.title}</p>
-              <p className="text-[#696969] text-base">{item.description}</p>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

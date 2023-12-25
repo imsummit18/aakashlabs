@@ -11,8 +11,8 @@ const Home = () => {
       <Slider />
       <div className="w-full max-w-[1440px] m-auto">
         <AboutHome />
-        <Service />
       </div>
+        <Service />
       <Footer />
     </>
   );
